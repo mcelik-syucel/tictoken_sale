@@ -21,7 +21,7 @@ contract TicTokenSale {
         require(y == 0 || (z = x * y) / y == x);
     }
 
-    function buyTokens(uint256 _noOfTokens) public payable // SORUN
+    function buyTokens(uint256 _noOfTokens) public payable 
     {
         require(multiply(_noOfTokens, tokenPrice) == msg.value);
         require(tokenContract.balanceOf(address(this)) >= _noOfTokens);

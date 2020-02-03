@@ -52,7 +52,7 @@ contract("TicToken", function(accounts)
             var balanceins = tokenInstance.balanceOf(accounts[0]);
             return balanceins;
         }).then(function(balanceins){
-            console.log('admin balance 111111 : '+balanceins.toNumber()); // admin balance : 750000
+            //console.log('admin balance 111111 : '+balanceins.toNumber()); // admin balance : 750000
             return tokenInstance.balanceOf(accounts[1]);
         }).then(function(balance) {
             assert.equal(balance, 250000, 'adds the amount to the receiving account.');
@@ -78,7 +78,7 @@ contract("TicToken", function(accounts)
             var balanceins = tokenInstance.balanceOf(accounts[0]);
             return balanceins;
         }).then(function(balanceins){
-            console.log('admin balance 22222 : '+balanceins.toNumber()); // admin balance : 750000
+            //console.log('admin balance 22222 : '+balanceins.toNumber()); // admin balance : 750000
             return tokenInstance.allowance(accounts[0], accounts[1]);
         }).then(function(allowance) {
             assert.equal(allowance, 100, 'stores the allowance for delegated transfer');
@@ -98,7 +98,7 @@ contract("TicToken", function(accounts)
             var balanceins = tokenInstance.balanceOf(accounts[0]);
             return balanceins;
         }).then(function(balanceins){
-            console.log('admin balance 33333 : '+balanceins.toNumber()); // admin balance : 749900
+            //console.log('admin balance 33333 : '+balanceins.toNumber()); // admin balance : 749900
             //Approve spendingAccount to spent 10 tokens from fromAccount
             return tokenInstance.approve(spendingAccount, 10, { from: fromAccount });
         }).then(function(receipt) {
