@@ -5183,7 +5183,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 949,
+                                  "referencedDeclaration": 951,
                                   "src": "3871:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_TicTokenPayroll_$769",
@@ -6493,7 +6493,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 949,
+                                  "referencedDeclaration": 951,
                                   "src": "4629:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_TicTokenPayroll_$769",
@@ -12017,7 +12017,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 949,
+                                  "referencedDeclaration": 951,
                                   "src": "3871:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_TicTokenPayroll_$769",
@@ -13327,7 +13327,7 @@
                                   "name": "this",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 949,
+                                  "referencedDeclaration": 951,
                                   "src": "4629:4:2",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_contract$_TicTokenPayroll_$769",
@@ -14046,6 +14046,99 @@
     "version": "0.5.12+commit.7709ece9.Emscripten.clang"
   },
   "networks": {
+    "4": {
+      "events": {
+        "0x4dd964410b55ced52630c6bce62bff42cd556fb5be94b43ebccfffbd510d2c0d": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_accountAddress",
+              "type": "address"
+            }
+          ],
+          "name": "FireEmployee",
+          "type": "event",
+          "signature": "0x4dd964410b55ced52630c6bce62bff42cd556fb5be94b43ebccfffbd510d2c0d"
+        },
+        "0x6f816bf411c9bb2dd1940470e84465bc38e5610885bda76c2aa34a9db444a20e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_salary",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_payday",
+              "type": "uint256"
+            }
+          ],
+          "name": "NewEmployee",
+          "type": "event",
+          "signature": "0x6f816bf411c9bb2dd1940470e84465bc38e5610885bda76c2aa34a9db444a20e"
+        },
+        "0x6ae7dccce71d54f2dc855f8e5cb1b9c56e2ed2765a57218d971eaef6bdf4459b": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_salary",
+              "type": "uint256"
+            }
+          ],
+          "name": "PayEmployee",
+          "type": "event",
+          "signature": "0x6ae7dccce71d54f2dc855f8e5cb1b9c56e2ed2765a57218d971eaef6bdf4459b"
+        },
+        "0x65de7774b55bb06d1f13ec2d49878a2d3a241efdefed8decedeef7f7fcf5191f": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "_accountAddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "_newSalary",
+              "type": "uint256"
+            }
+          ],
+          "name": "SalaryChange",
+          "type": "event",
+          "signature": "0x65de7774b55bb06d1f13ec2d49878a2d3a241efdefed8decedeef7f7fcf5191f"
+        }
+      },
+      "links": {},
+      "address": "0xF0dE50c0feEc2A4179f824e2E36a17f573C4279C",
+      "transactionHash": "0x8b2baed0cc91968bf112bbf47f95ec107af60d31d99b5da6875ca524135058a2"
+    },
     "5777": {
       "events": {
         "0x4dd964410b55ced52630c6bce62bff42cd556fb5be94b43ebccfffbd510d2c0d": {
@@ -14141,7 +14234,7 @@
     }
   },
   "schemaVersion": "3.0.20",
-  "updatedAt": "2020-02-03T08:38:11.563Z",
+  "updatedAt": "2020-02-04T21:35:26.341Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

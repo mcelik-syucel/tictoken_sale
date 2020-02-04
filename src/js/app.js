@@ -42,7 +42,7 @@ App = {
                     
                     return App.render();
                 });
-            })
+            });
     },
 
     listenForEvents: function() {
